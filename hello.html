@@ -1,9 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Arithmetic Operation </title>
 </head>
 <body>
+<script >
+	document.write("First give the value for x and y thn type <br>'add' for addition <br> 'sub'for subtruction <br> 'mul' for multiplicatin <br> 'div' for division<br>" );
+//document.write("")
+</script>
+<button onclick="fun()" >Click to Start</button>
+
+
+<script>
+
+function fun()
+{
+var a= prompt("Give the value of x");
+var b= prompt("Give the value of y");
+var c= prompt("what do you want");
+var x= parseInt(a);
+var y=parseInt(b);
+
+if(c=="add")  add();
+if(c=="sub")  sub();
+if(c=="mul")  mul();
+if(c=="div")  div();
+
+
+function add()
+{
+	document.write("The addition is:<br>")
+	document.write(x+y);
+}
+function sub()
+{
+	document.write("The subtruction is:<br>")
+	document.write(x-y);
+}
+function mul()
+{
+	document.write("The multiplication is:<br>")
+	document.write(x*y);
+}
+function div()
+{
+	document.write("The division is :<br>")
+	document.write(x/y);
+}
+}
+
+
+</script>
+
 
 </body>
 </html>
